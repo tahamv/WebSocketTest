@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:web_socket_project/core/config/theme/app_theme.dart';
 
@@ -16,7 +15,6 @@ mixin BaseWidgetMixin {
   List<Widget> appBarActions(BuildContext context) {
     return [const SizedBox()];
   }
-
 
   List<dynamic> setBlocProviders(BuildContext context) {
     return [];

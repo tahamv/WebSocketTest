@@ -1,4 +1,3 @@
-
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:web_socket_project/core/config/locale/locale_configs.dart';
 import 'package:web_socket_project/core/config/theme/app_theme.dart';

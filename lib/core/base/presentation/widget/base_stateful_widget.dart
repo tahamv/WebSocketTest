@@ -21,7 +21,7 @@ abstract class BaseState<Page extends BaseStateFulWidget> extends State<Page> wi
                   return body(context);
                 },
               ),
-      )
+            )
           : body(context),
     );
   }

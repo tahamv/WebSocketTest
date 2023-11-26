@@ -16,14 +16,15 @@ class LocationPage extends BaseStatelessPage {
       title: Text(
         S.of(context).locations,
         style: Theme.of(context).textTheme.titleMedium!.copyWith(
-          color: Theme.of(context).primary,
-          fontWeight: FontWeight.w700,
-        ),
+              color: Theme.of(context).primary,
+              fontWeight: FontWeight.w700,
+            ),
       ),
       centerTitle: true,
       actions: appBarActions(context),
     );
   }
+
   @override
   Widget body(BuildContext context) {
     return const LocationsWidget();

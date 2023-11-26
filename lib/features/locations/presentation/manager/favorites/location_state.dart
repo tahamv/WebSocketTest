@@ -7,9 +7,13 @@ part 'location_state.freezed.dart';
 class LocationState with _$LocationState {
   const factory LocationState.idle() = LocationStateIdle;
 
-  const factory LocationState.loading({List<LocationEntity>? locations,}) = LocationStateLoading;
+  const factory LocationState.loading({
+    List<LocationEntity>? locations,
+  }) = LocationStateLoading;
 
-  const factory LocationState.success({List<LocationEntity>? locations,}) = LocationStateSuccess;
+  const factory LocationState.success({
+    List<LocationEntity>? locations,
+  }) = LocationStateSuccess;
 
   const factory LocationState.failure({String? message}) = LocationStateFailure;
 }

@@ -19,16 +19,14 @@ mixin _$ThemeAndLanguageState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() idle,
-    required TResult Function(ThemeType? themeType, LanguageType? languageType)
-        success,
+    required TResult Function(ThemeType? themeType, LanguageType? languageType) success,
     required TResult Function(String message) failed,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? idle,
-    TResult? Function(ThemeType? themeType, LanguageType? languageType)?
-        success,
+    TResult? Function(ThemeType? themeType, LanguageType? languageType)? success,
     TResult? Function(String message)? failed,
   }) =>
       throw _privateConstructorUsedError;
@@ -66,14 +64,12 @@ mixin _$ThemeAndLanguageState {
 
 /// @nodoc
 abstract class $ThemeAndLanguageStateCopyWith<$Res> {
-  factory $ThemeAndLanguageStateCopyWith(ThemeAndLanguageState value,
-          $Res Function(ThemeAndLanguageState) then) =
+  factory $ThemeAndLanguageStateCopyWith(ThemeAndLanguageState value, $Res Function(ThemeAndLanguageState) then) =
       _$ThemeAndLanguageStateCopyWithImpl<$Res, ThemeAndLanguageState>;
 }
 
 /// @nodoc
-class _$ThemeAndLanguageStateCopyWithImpl<$Res,
-        $Val extends ThemeAndLanguageState>
+class _$ThemeAndLanguageStateCopyWithImpl<$Res, $Val extends ThemeAndLanguageState>
     implements $ThemeAndLanguageStateCopyWith<$Res> {
   _$ThemeAndLanguageStateCopyWithImpl(this._value, this._then);
 
@@ -86,19 +82,16 @@ class _$ThemeAndLanguageStateCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$ThemeAndLanguageStateIdleImplCopyWith<$Res> {
   factory _$$ThemeAndLanguageStateIdleImplCopyWith(
-          _$ThemeAndLanguageStateIdleImpl value,
-          $Res Function(_$ThemeAndLanguageStateIdleImpl) then) =
+          _$ThemeAndLanguageStateIdleImpl value, $Res Function(_$ThemeAndLanguageStateIdleImpl) then) =
       __$$ThemeAndLanguageStateIdleImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$ThemeAndLanguageStateIdleImplCopyWithImpl<$Res>
-    extends _$ThemeAndLanguageStateCopyWithImpl<$Res,
-        _$ThemeAndLanguageStateIdleImpl>
+    extends _$ThemeAndLanguageStateCopyWithImpl<$Res, _$ThemeAndLanguageStateIdleImpl>
     implements _$$ThemeAndLanguageStateIdleImplCopyWith<$Res> {
   __$$ThemeAndLanguageStateIdleImplCopyWithImpl(
-      _$ThemeAndLanguageStateIdleImpl _value,
-      $Res Function(_$ThemeAndLanguageStateIdleImpl) _then)
+      _$ThemeAndLanguageStateIdleImpl _value, $Res Function(_$ThemeAndLanguageStateIdleImpl) _then)
       : super(_value, _then);
 }
 
@@ -114,9 +107,7 @@ class _$ThemeAndLanguageStateIdleImpl implements ThemeAndLanguageStateIdle {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ThemeAndLanguageStateIdleImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$ThemeAndLanguageStateIdleImpl);
   }
 
   @override
@@ -126,8 +117,7 @@ class _$ThemeAndLanguageStateIdleImpl implements ThemeAndLanguageStateIdle {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() idle,
-    required TResult Function(ThemeType? themeType, LanguageType? languageType)
-        success,
+    required TResult Function(ThemeType? themeType, LanguageType? languageType) success,
     required TResult Function(String message) failed,
   }) {
     return idle();
@@ -137,8 +127,7 @@ class _$ThemeAndLanguageStateIdleImpl implements ThemeAndLanguageStateIdle {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? idle,
-    TResult? Function(ThemeType? themeType, LanguageType? languageType)?
-        success,
+    TResult? Function(ThemeType? themeType, LanguageType? languageType)? success,
     TResult? Function(String message)? failed,
   }) {
     return idle?.call();
@@ -200,8 +189,7 @@ abstract class ThemeAndLanguageStateIdle implements ThemeAndLanguageState {
 /// @nodoc
 abstract class _$$ThemeAndLanguageStateSuccessImplCopyWith<$Res> {
   factory _$$ThemeAndLanguageStateSuccessImplCopyWith(
-          _$ThemeAndLanguageStateSuccessImpl value,
-          $Res Function(_$ThemeAndLanguageStateSuccessImpl) then) =
+          _$ThemeAndLanguageStateSuccessImpl value, $Res Function(_$ThemeAndLanguageStateSuccessImpl) then) =
       __$$ThemeAndLanguageStateSuccessImplCopyWithImpl<$Res>;
   @useResult
   $Res call({ThemeType? themeType, LanguageType? languageType});
@@ -209,12 +197,10 @@ abstract class _$$ThemeAndLanguageStateSuccessImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ThemeAndLanguageStateSuccessImplCopyWithImpl<$Res>
-    extends _$ThemeAndLanguageStateCopyWithImpl<$Res,
-        _$ThemeAndLanguageStateSuccessImpl>
+    extends _$ThemeAndLanguageStateCopyWithImpl<$Res, _$ThemeAndLanguageStateSuccessImpl>
     implements _$$ThemeAndLanguageStateSuccessImplCopyWith<$Res> {
   __$$ThemeAndLanguageStateSuccessImplCopyWithImpl(
-      _$ThemeAndLanguageStateSuccessImpl _value,
-      $Res Function(_$ThemeAndLanguageStateSuccessImpl) _then)
+      _$ThemeAndLanguageStateSuccessImpl _value, $Res Function(_$ThemeAndLanguageStateSuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -238,8 +224,7 @@ class __$$ThemeAndLanguageStateSuccessImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ThemeAndLanguageStateSuccessImpl
-    implements ThemeAndLanguageStateSuccess {
+class _$ThemeAndLanguageStateSuccessImpl implements ThemeAndLanguageStateSuccess {
   const _$ThemeAndLanguageStateSuccessImpl({this.themeType, this.languageType});
 
   @override
@@ -257,10 +242,8 @@ class _$ThemeAndLanguageStateSuccessImpl
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ThemeAndLanguageStateSuccessImpl &&
-            (identical(other.themeType, themeType) ||
-                other.themeType == themeType) &&
-            (identical(other.languageType, languageType) ||
-                other.languageType == languageType));
+            (identical(other.themeType, themeType) || other.themeType == themeType) &&
+            (identical(other.languageType, languageType) || other.languageType == languageType));
   }
 
   @override
@@ -269,17 +252,14 @@ class _$ThemeAndLanguageStateSuccessImpl
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ThemeAndLanguageStateSuccessImplCopyWith<
-          _$ThemeAndLanguageStateSuccessImpl>
-      get copyWith => __$$ThemeAndLanguageStateSuccessImplCopyWithImpl<
-          _$ThemeAndLanguageStateSuccessImpl>(this, _$identity);
+  _$$ThemeAndLanguageStateSuccessImplCopyWith<_$ThemeAndLanguageStateSuccessImpl> get copyWith =>
+      __$$ThemeAndLanguageStateSuccessImplCopyWithImpl<_$ThemeAndLanguageStateSuccessImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() idle,
-    required TResult Function(ThemeType? themeType, LanguageType? languageType)
-        success,
+    required TResult Function(ThemeType? themeType, LanguageType? languageType) success,
     required TResult Function(String message) failed,
   }) {
     return success(themeType, languageType);
@@ -289,8 +269,7 @@ class _$ThemeAndLanguageStateSuccessImpl
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? idle,
-    TResult? Function(ThemeType? themeType, LanguageType? languageType)?
-        success,
+    TResult? Function(ThemeType? themeType, LanguageType? languageType)? success,
     TResult? Function(String message)? failed,
   }) {
     return success?.call(themeType, languageType);
@@ -346,23 +325,20 @@ class _$ThemeAndLanguageStateSuccessImpl
 }
 
 abstract class ThemeAndLanguageStateSuccess implements ThemeAndLanguageState {
-  const factory ThemeAndLanguageStateSuccess(
-      {final ThemeType? themeType,
-      final LanguageType? languageType}) = _$ThemeAndLanguageStateSuccessImpl;
+  const factory ThemeAndLanguageStateSuccess({final ThemeType? themeType, final LanguageType? languageType}) =
+      _$ThemeAndLanguageStateSuccessImpl;
 
   ThemeType? get themeType;
   LanguageType? get languageType;
   @JsonKey(ignore: true)
-  _$$ThemeAndLanguageStateSuccessImplCopyWith<
-          _$ThemeAndLanguageStateSuccessImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$ThemeAndLanguageStateSuccessImplCopyWith<_$ThemeAndLanguageStateSuccessImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$ThemeAndLanguageStateFailedImplCopyWith<$Res> {
   factory _$$ThemeAndLanguageStateFailedImplCopyWith(
-          _$ThemeAndLanguageStateFailedImpl value,
-          $Res Function(_$ThemeAndLanguageStateFailedImpl) then) =
+          _$ThemeAndLanguageStateFailedImpl value, $Res Function(_$ThemeAndLanguageStateFailedImpl) then) =
       __$$ThemeAndLanguageStateFailedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String message});
@@ -370,12 +346,10 @@ abstract class _$$ThemeAndLanguageStateFailedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ThemeAndLanguageStateFailedImplCopyWithImpl<$Res>
-    extends _$ThemeAndLanguageStateCopyWithImpl<$Res,
-        _$ThemeAndLanguageStateFailedImpl>
+    extends _$ThemeAndLanguageStateCopyWithImpl<$Res, _$ThemeAndLanguageStateFailedImpl>
     implements _$$ThemeAndLanguageStateFailedImplCopyWith<$Res> {
   __$$ThemeAndLanguageStateFailedImplCopyWithImpl(
-      _$ThemeAndLanguageStateFailedImpl _value,
-      $Res Function(_$ThemeAndLanguageStateFailedImpl) _then)
+      _$ThemeAndLanguageStateFailedImpl _value, $Res Function(_$ThemeAndLanguageStateFailedImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -419,16 +393,14 @@ class _$ThemeAndLanguageStateFailedImpl implements ThemeAndLanguageStateFailed {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ThemeAndLanguageStateFailedImplCopyWith<_$ThemeAndLanguageStateFailedImpl>
-      get copyWith => __$$ThemeAndLanguageStateFailedImplCopyWithImpl<
-          _$ThemeAndLanguageStateFailedImpl>(this, _$identity);
+  _$$ThemeAndLanguageStateFailedImplCopyWith<_$ThemeAndLanguageStateFailedImpl> get copyWith =>
+      __$$ThemeAndLanguageStateFailedImplCopyWithImpl<_$ThemeAndLanguageStateFailedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() idle,
-    required TResult Function(ThemeType? themeType, LanguageType? languageType)
-        success,
+    required TResult Function(ThemeType? themeType, LanguageType? languageType) success,
     required TResult Function(String message) failed,
   }) {
     return failed(message);
@@ -438,8 +410,7 @@ class _$ThemeAndLanguageStateFailedImpl implements ThemeAndLanguageStateFailed {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? idle,
-    TResult? Function(ThemeType? themeType, LanguageType? languageType)?
-        success,
+    TResult? Function(ThemeType? themeType, LanguageType? languageType)? success,
     TResult? Function(String message)? failed,
   }) {
     return failed?.call(message);
@@ -495,11 +466,10 @@ class _$ThemeAndLanguageStateFailedImpl implements ThemeAndLanguageStateFailed {
 }
 
 abstract class ThemeAndLanguageStateFailed implements ThemeAndLanguageState {
-  const factory ThemeAndLanguageStateFailed(final String message) =
-      _$ThemeAndLanguageStateFailedImpl;
+  const factory ThemeAndLanguageStateFailed(final String message) = _$ThemeAndLanguageStateFailedImpl;
 
   String get message;
   @JsonKey(ignore: true)
-  _$$ThemeAndLanguageStateFailedImplCopyWith<_$ThemeAndLanguageStateFailedImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$ThemeAndLanguageStateFailedImplCopyWith<_$ThemeAndLanguageStateFailedImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }

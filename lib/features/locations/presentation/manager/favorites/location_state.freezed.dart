@@ -70,35 +70,30 @@ mixin _$LocationState {
 
 /// @nodoc
 abstract class $LocationStateCopyWith<$Res> {
-  factory $LocationStateCopyWith(
-          LocationState value, $Res Function(LocationState) then) =
+  factory $LocationStateCopyWith(LocationState value, $Res Function(LocationState) then) =
       _$LocationStateCopyWithImpl<$Res, LocationState>;
 }
 
 /// @nodoc
-class _$LocationStateCopyWithImpl<$Res, $Val extends LocationState>
-    implements $LocationStateCopyWith<$Res> {
+class _$LocationStateCopyWithImpl<$Res, $Val extends LocationState> implements $LocationStateCopyWith<$Res> {
   _$LocationStateCopyWithImpl(this._value, this._then);
 
-  // ignore: unused_field
+// ignore: unused_field
   final $Val _value;
-  // ignore: unused_field
+// ignore: unused_field
   final $Res Function($Val) _then;
 }
 
 /// @nodoc
 abstract class _$$LocationStateIdleImplCopyWith<$Res> {
-  factory _$$LocationStateIdleImplCopyWith(_$LocationStateIdleImpl value,
-          $Res Function(_$LocationStateIdleImpl) then) =
+  factory _$$LocationStateIdleImplCopyWith(_$LocationStateIdleImpl value, $Res Function(_$LocationStateIdleImpl) then) =
       __$$LocationStateIdleImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LocationStateIdleImplCopyWithImpl<$Res>
-    extends _$LocationStateCopyWithImpl<$Res, _$LocationStateIdleImpl>
+class __$$LocationStateIdleImplCopyWithImpl<$Res> extends _$LocationStateCopyWithImpl<$Res, _$LocationStateIdleImpl>
     implements _$$LocationStateIdleImplCopyWith<$Res> {
-  __$$LocationStateIdleImplCopyWithImpl(_$LocationStateIdleImpl _value,
-      $Res Function(_$LocationStateIdleImpl) _then)
+  __$$LocationStateIdleImplCopyWithImpl(_$LocationStateIdleImpl _value, $Res Function(_$LocationStateIdleImpl) _then)
       : super(_value, _then);
 }
 
@@ -114,8 +109,7 @@ class _$LocationStateIdleImpl implements LocationStateIdle {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LocationStateIdleImpl);
+    return identical(this, other) || (other.runtimeType == runtimeType && other is _$LocationStateIdleImpl);
   }
 
   @override
@@ -202,8 +196,8 @@ abstract class LocationStateIdle implements LocationState {
 
 /// @nodoc
 abstract class _$$LocationStateLoadingImplCopyWith<$Res> {
-  factory _$$LocationStateLoadingImplCopyWith(_$LocationStateLoadingImpl value,
-          $Res Function(_$LocationStateLoadingImpl) then) =
+  factory _$$LocationStateLoadingImplCopyWith(
+          _$LocationStateLoadingImpl value, $Res Function(_$LocationStateLoadingImpl) then) =
       __$$LocationStateLoadingImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<LocationEntity>? locations});
@@ -213,8 +207,8 @@ abstract class _$$LocationStateLoadingImplCopyWith<$Res> {
 class __$$LocationStateLoadingImplCopyWithImpl<$Res>
     extends _$LocationStateCopyWithImpl<$Res, _$LocationStateLoadingImpl>
     implements _$$LocationStateLoadingImplCopyWith<$Res> {
-  __$$LocationStateLoadingImplCopyWithImpl(_$LocationStateLoadingImpl _value,
-      $Res Function(_$LocationStateLoadingImpl) _then)
+  __$$LocationStateLoadingImplCopyWithImpl(
+      _$LocationStateLoadingImpl _value, $Res Function(_$LocationStateLoadingImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -234,8 +228,7 @@ class __$$LocationStateLoadingImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$LocationStateLoadingImpl implements LocationStateLoading {
-  const _$LocationStateLoadingImpl({final List<LocationEntity>? locations})
-      : _locations = locations;
+  const _$LocationStateLoadingImpl({final List<LocationEntity>? locations}) : _locations = locations;
 
   final List<LocationEntity>? _locations;
   @override
@@ -243,7 +236,7 @@ class _$LocationStateLoadingImpl implements LocationStateLoading {
     final value = _locations;
     if (value == null) return null;
     if (_locations is EqualUnmodifiableListView) return _locations;
-    // ignore: implicit_dynamic_type
+// ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }
 
@@ -257,21 +250,17 @@ class _$LocationStateLoadingImpl implements LocationStateLoading {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LocationStateLoadingImpl &&
-            const DeepCollectionEquality()
-                .equals(other._locations, _locations));
+            const DeepCollectionEquality().equals(other._locations, _locations));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_locations));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_locations));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LocationStateLoadingImplCopyWith<_$LocationStateLoadingImpl>
-      get copyWith =>
-          __$$LocationStateLoadingImplCopyWithImpl<_$LocationStateLoadingImpl>(
-              this, _$identity);
+  _$$LocationStateLoadingImplCopyWith<_$LocationStateLoadingImpl> get copyWith =>
+      __$$LocationStateLoadingImplCopyWithImpl<_$LocationStateLoadingImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -349,19 +338,17 @@ class _$LocationStateLoadingImpl implements LocationStateLoading {
 }
 
 abstract class LocationStateLoading implements LocationState {
-  const factory LocationStateLoading({final List<LocationEntity>? locations}) =
-      _$LocationStateLoadingImpl;
+  const factory LocationStateLoading({final List<LocationEntity>? locations}) = _$LocationStateLoadingImpl;
 
   List<LocationEntity>? get locations;
   @JsonKey(ignore: true)
-  _$$LocationStateLoadingImplCopyWith<_$LocationStateLoadingImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$LocationStateLoadingImplCopyWith<_$LocationStateLoadingImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$LocationStateSuccessImplCopyWith<$Res> {
-  factory _$$LocationStateSuccessImplCopyWith(_$LocationStateSuccessImpl value,
-          $Res Function(_$LocationStateSuccessImpl) then) =
+  factory _$$LocationStateSuccessImplCopyWith(
+          _$LocationStateSuccessImpl value, $Res Function(_$LocationStateSuccessImpl) then) =
       __$$LocationStateSuccessImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<LocationEntity>? locations});
@@ -371,8 +358,8 @@ abstract class _$$LocationStateSuccessImplCopyWith<$Res> {
 class __$$LocationStateSuccessImplCopyWithImpl<$Res>
     extends _$LocationStateCopyWithImpl<$Res, _$LocationStateSuccessImpl>
     implements _$$LocationStateSuccessImplCopyWith<$Res> {
-  __$$LocationStateSuccessImplCopyWithImpl(_$LocationStateSuccessImpl _value,
-      $Res Function(_$LocationStateSuccessImpl) _then)
+  __$$LocationStateSuccessImplCopyWithImpl(
+      _$LocationStateSuccessImpl _value, $Res Function(_$LocationStateSuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -392,8 +379,7 @@ class __$$LocationStateSuccessImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$LocationStateSuccessImpl implements LocationStateSuccess {
-  const _$LocationStateSuccessImpl({final List<LocationEntity>? locations})
-      : _locations = locations;
+  const _$LocationStateSuccessImpl({final List<LocationEntity>? locations}) : _locations = locations;
 
   final List<LocationEntity>? _locations;
   @override
@@ -401,7 +387,7 @@ class _$LocationStateSuccessImpl implements LocationStateSuccess {
     final value = _locations;
     if (value == null) return null;
     if (_locations is EqualUnmodifiableListView) return _locations;
-    // ignore: implicit_dynamic_type
+// ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }
 
@@ -415,21 +401,17 @@ class _$LocationStateSuccessImpl implements LocationStateSuccess {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LocationStateSuccessImpl &&
-            const DeepCollectionEquality()
-                .equals(other._locations, _locations));
+            const DeepCollectionEquality().equals(other._locations, _locations));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_locations));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_locations));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LocationStateSuccessImplCopyWith<_$LocationStateSuccessImpl>
-      get copyWith =>
-          __$$LocationStateSuccessImplCopyWithImpl<_$LocationStateSuccessImpl>(
-              this, _$identity);
+  _$$LocationStateSuccessImplCopyWith<_$LocationStateSuccessImpl> get copyWith =>
+      __$$LocationStateSuccessImplCopyWithImpl<_$LocationStateSuccessImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -507,19 +489,17 @@ class _$LocationStateSuccessImpl implements LocationStateSuccess {
 }
 
 abstract class LocationStateSuccess implements LocationState {
-  const factory LocationStateSuccess({final List<LocationEntity>? locations}) =
-      _$LocationStateSuccessImpl;
+  const factory LocationStateSuccess({final List<LocationEntity>? locations}) = _$LocationStateSuccessImpl;
 
   List<LocationEntity>? get locations;
   @JsonKey(ignore: true)
-  _$$LocationStateSuccessImplCopyWith<_$LocationStateSuccessImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$LocationStateSuccessImplCopyWith<_$LocationStateSuccessImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$LocationStateFailureImplCopyWith<$Res> {
-  factory _$$LocationStateFailureImplCopyWith(_$LocationStateFailureImpl value,
-          $Res Function(_$LocationStateFailureImpl) then) =
+  factory _$$LocationStateFailureImplCopyWith(
+          _$LocationStateFailureImpl value, $Res Function(_$LocationStateFailureImpl) then) =
       __$$LocationStateFailureImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? message});
@@ -529,8 +509,8 @@ abstract class _$$LocationStateFailureImplCopyWith<$Res> {
 class __$$LocationStateFailureImplCopyWithImpl<$Res>
     extends _$LocationStateCopyWithImpl<$Res, _$LocationStateFailureImpl>
     implements _$$LocationStateFailureImplCopyWith<$Res> {
-  __$$LocationStateFailureImplCopyWithImpl(_$LocationStateFailureImpl _value,
-      $Res Function(_$LocationStateFailureImpl) _then)
+  __$$LocationStateFailureImplCopyWithImpl(
+      _$LocationStateFailureImpl _value, $Res Function(_$LocationStateFailureImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -574,10 +554,8 @@ class _$LocationStateFailureImpl implements LocationStateFailure {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LocationStateFailureImplCopyWith<_$LocationStateFailureImpl>
-      get copyWith =>
-          __$$LocationStateFailureImplCopyWithImpl<_$LocationStateFailureImpl>(
-              this, _$identity);
+  _$$LocationStateFailureImplCopyWith<_$LocationStateFailureImpl> get copyWith =>
+      __$$LocationStateFailureImplCopyWithImpl<_$LocationStateFailureImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -655,11 +633,9 @@ class _$LocationStateFailureImpl implements LocationStateFailure {
 }
 
 abstract class LocationStateFailure implements LocationState {
-  const factory LocationStateFailure({final String? message}) =
-      _$LocationStateFailureImpl;
+  const factory LocationStateFailure({final String? message}) = _$LocationStateFailureImpl;
 
   String? get message;
   @JsonKey(ignore: true)
-  _$$LocationStateFailureImplCopyWith<_$LocationStateFailureImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$LocationStateFailureImplCopyWith<_$LocationStateFailureImpl> get copyWith => throw _privateConstructorUsedError;
 }

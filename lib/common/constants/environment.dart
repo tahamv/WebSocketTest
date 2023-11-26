@@ -31,11 +31,9 @@ class Dev extends Environment {
   String get url {
     return '$schema://$baseUrl${port != '' ? ':$port' : ''}/$prefixPath/';
   }
-
- }
+}
 
 class Stage extends Environment {
-
   @override
   String get baseUrl => super.baseUrl ?? 'flutter-test.iran.liara.run';
 
@@ -58,7 +56,6 @@ class Stage extends Environment {
 
   @override
   String get externalPageUrl => super.externalPageUrl ?? 'ws://flutter-test.iran.liara.run';
-
 }
 
 class Production extends Environment {

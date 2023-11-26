@@ -90,38 +90,37 @@ extension AppTheme on ThemeData {
                 : _getDefaultPersianTextTheme(black, fontFamily),
             appBarTheme: AppBarTheme(
               elevation: 0,
-        color: background,
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: background),
-      ),
-      floatingActionButtonTheme: floatingActionButtonTheme.copyWith(
-        backgroundColor: lightPrimary,
-      ),
-      colorScheme: ColorScheme(
-          brightness: brightness,
-          primary: primary,
-          onPrimary: primary,
-          secondary: secondary,
-          onSecondary: secondary,
-          error: error,
-          onError: error,
-          background: background,
-          onBackground: background,
-          surface: primary,
-          onSurface: primary),
-      iconTheme: iconTheme.copyWith(color: primary),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        ),
-      ),
-      radioTheme: RadioThemeData(
-        fillColor: MaterialStateColor.resolveWith((states) => primary),
-      ),
-      checkboxTheme: CheckboxThemeData(
-        overlayColor: MaterialStateColor.resolveWith((states) => primary),
-      )
-    )
+              color: background,
+              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: background),
+            ),
+            floatingActionButtonTheme: floatingActionButtonTheme.copyWith(
+              backgroundColor: lightPrimary,
+            ),
+            colorScheme: ColorScheme(
+                brightness: brightness,
+                primary: primary,
+                onPrimary: primary,
+                secondary: secondary,
+                onSecondary: secondary,
+                error: error,
+                onError: error,
+                background: background,
+                onBackground: background,
+                surface: primary,
+                onSurface: primary),
+            iconTheme: iconTheme.copyWith(color: primary),
+            elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+              ),
+            ),
+            radioTheme: RadioThemeData(
+              fillColor: MaterialStateColor.resolveWith((states) => primary),
+            ),
+            checkboxTheme: CheckboxThemeData(
+              overlayColor: MaterialStateColor.resolveWith((states) => primary),
+            ))
         : copyWith(
       timePickerTheme: timePickerTheme,
             scaffoldBackgroundColor: background,
@@ -135,33 +134,33 @@ extension AppTheme on ThemeData {
                 : _getDefaultPersianTextTheme(black, fontFamily),
             appBarTheme: AppBarTheme(
               elevation: 0,
-        color: background,
-        systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: background),
-      ),
-      floatingActionButtonTheme: floatingActionButtonTheme.copyWith(
-        backgroundColor: lightPrimary,
-      ),
-      colorScheme: ColorScheme(
-          brightness: brightness,
-          primary: primary,
-          onPrimary: primary,
-          secondary: secondary,
-          onSecondary: secondary,
-          error: error,
-          onError: error,
-          background: background,
-          onBackground: background,
-          surface: primary,
-          onSurface: primary),
+              color: background,
+              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: background),
+            ),
+            floatingActionButtonTheme: floatingActionButtonTheme.copyWith(
+              backgroundColor: lightPrimary,
+            ),
+            colorScheme: ColorScheme(
+                brightness: brightness,
+                primary: primary,
+                onPrimary: primary,
+                secondary: secondary,
+                onSecondary: secondary,
+                error: error,
+                onError: error,
+                background: background,
+                onBackground: background,
+                surface: primary,
+                onSurface: primary),
 
-      iconTheme: iconTheme.copyWith(color: black),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        ),
-      ),
-    );
+            iconTheme: iconTheme.copyWith(color: black),
+            elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+              ),
+            ),
+          );
   }
 
   TextTheme _getDefaultTextTheme(Color color, String fontFamily) {

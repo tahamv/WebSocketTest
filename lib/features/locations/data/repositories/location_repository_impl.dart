@@ -17,7 +17,7 @@ class LocationRepositoryImpl extends LocationRepository {
     StreamController<LocationEntity> controller = StreamController<LocationEntity>();
     final result = _favoriteRemoteDataSource.getLocations();
     result.listen((event) {
-      controller.add(event.mapper()??LocationEntity());
+      controller.add(event.mapper() ?? LocationEntity());
     });
 
     return controller.stream;

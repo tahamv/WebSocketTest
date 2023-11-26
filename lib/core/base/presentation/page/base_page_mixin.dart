@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -59,6 +58,7 @@ mixin BasePageMixin {
   bool endDrawerEnableOpenDragGesture() {
     return false;
   }
+
   Widget body(BuildContext context) {
     return const SizedBox();
   }
@@ -85,8 +85,7 @@ mixin BasePageMixin {
     );
   }
 
-  void willPop(bool state)  {
-  }
+  void willPop(bool state) {}
 
   Widget _buildSafeArea(BuildContext context) {
     return safeArea() ? SafeArea(child: _buildScaffold(context)) : _buildScaffold(context);
@@ -123,5 +122,4 @@ mixin BasePageMixin {
   Widget? bottomNavigationBar(BuildContext context) {
     return null;
   }
-
 }

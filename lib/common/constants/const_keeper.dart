@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:web_socket_project/common/constants/environment.dart';
 
@@ -14,5 +13,4 @@ class ConstKeeper {
   static GlobalKey<ScaffoldMessengerState> snackBarKey = GlobalKey<ScaffoldMessengerState>();
 
   static const String deeplinkSchema = "apollon://apollon.uk.com/";
-
 }
